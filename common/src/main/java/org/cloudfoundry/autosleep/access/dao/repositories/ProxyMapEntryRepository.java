@@ -35,4 +35,9 @@ public interface ProxyMapEntryRepository extends JpaRepository<ProxyMapEntry, St
     @Query("DELETE FROM ProxyMapEntry e WHERE e.host = :host")
     void deleteIfExists(@Param("host") String host);
 
+    @Modifying
+    @Transactional
+    @Query("DELETE FROM ProxyMapEntry e WHERE e.appId = :appId")
+    void deleteAppRoutesIfExists(@Param("appId") String appId);
+
 }
