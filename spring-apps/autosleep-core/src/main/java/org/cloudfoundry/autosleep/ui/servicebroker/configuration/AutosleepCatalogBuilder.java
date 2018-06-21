@@ -79,8 +79,8 @@ public class AutosleepCatalogBuilder {
     private Map<String, Object> getServiceDefinitionMetadata() {
         Map<String, Object> sdMetadata = new HashMap<>();
         sdMetadata.put("displayName", "Autosleep");
-        sdMetadata.put("imageUrl", "https://en.wikipedia"
-                + ".org/wiki/Sleep#/media/File:WLA_metmuseum_Bronze_statue_of_Eros_sleeping_7.jpg");
+        sdMetadata.put("imageUrl", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/"
+        		+ "WLA_metmuseum_Bronze_statue_of_Eros_sleeping_7.jpg/50px-WLA_metmuseum_Bronze_statue_of_Eros_sleeping_7.jpg");
         sdMetadata.put("longDescription", "Autosleep Service");
         sdMetadata.put("providerDisplayName", "Orange");
         sdMetadata.put("documentationUrl", "https://github.com/Orange-OpenSource/autosleep");
